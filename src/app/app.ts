@@ -9,4 +9,5 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('products-app');
+  email : string ="test@gmail.com";
 }

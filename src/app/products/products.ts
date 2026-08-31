@@ -19,4 +19,11 @@ export class Products  implements OnInit {
         ]
   }
 
+  hundleDelete(product: any) {
+    let val = confirm("Voulez-vous supprimer ce produit ?");
+    if (val == true) {
+      this.products = this.products.filter((p :any) => p.id !== product.id);
+    } 
+  }
+
 }

@@ -7,6 +7,9 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 ## Domo 
 ### Router link
 <img src="public/assets/router-link.png">
+
+### Delete a product 
+<img src="public/assets/delete-product.png">
 ## Development server
 
 To start a local development server, run:

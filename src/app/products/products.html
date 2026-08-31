@@ -7,6 +7,7 @@
                     <th>NAME</th>
                     <th>PRICE</th>
                     <th>SELECTED</th>
+                    <th>ACTIONS</th>
                 </tr>
             </thead>
             @if(products){
@@ -19,7 +20,21 @@
                             <td>{{ product.id }} </td>
                             <td>{{ product.name }} </td>
                             <td>{{ product.price }} </td>
-                            <td>{{ product.selected }} </td>
+                            <td>
+                                @if(product.selected)
+                                {
+                                    <i class="bi bi-check-circle"></i>
+                                }
+                                @else
+                                {
+                                    <i class="bi bi-circle"></i>
+                                }
+                            </td>
+                            <td> 
+                                <button (click)="hundleDelete(product)" class="btn btn-outline-danger">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </td>
                         </tr>
                     }
                 </tbody>
